@@ -1,0 +1,399 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:UrduNovelRecommendationOntolgy="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#">
+    <Ontology rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#belongsToGenre -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#belongsToGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Genre"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasAuthor -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasAuthor">
+        <inverseOf rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#isAuthorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Author"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasRead -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasRead">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Book"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasReviewed -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasReviewed">
+        <inverseOf rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#isReviewdBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Review"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasReward -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasReward">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Award"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#isAuthorOf -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#isAuthorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Author"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Book"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#isReviewdBy -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#isReviewdBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#User"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#likesGenre -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#likesGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Genre"/>
+    </ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#reviewsBook -->
+
+    <ObjectProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#reviewsBook">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Book"/>
+    </ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasAge -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasAge">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasBirthdate -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasBirthdate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasComment -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasComment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasDate -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasDescription -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Genre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasGenreName -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasGenreName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Genre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasISBN -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasISBN">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasName -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasNationality -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasNationality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Author"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasPreference -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasPreference">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasPublicationDate -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasPublicationDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasRating -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasRewardName -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasRewardName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Award"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasTitle -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasUserName -->
+
+    <DatatypeProperty rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasUserName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Author -->
+
+    <Class rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Author">
+        <disjointWith rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#User"/>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Award -->
+
+    <Class rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Award"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Book -->
+
+    <Class rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Book">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasAuthor"/>
+                <someValuesFrom rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Author"/>
+            </Restriction>
+        </equivalentClass>
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasISBN"/>
+                <someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Genre -->
+
+    <Class rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Review -->
+
+    <Class rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#Review"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#User -->
+
+    <Class rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#User">
+        <equivalentClass>
+            <Restriction>
+                <onProperty rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#hasAge"/>
+                <minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</minQualifiedCardinality>
+                <onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </Restriction>
+        </equivalentClass>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#author_1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#author_1">
+        <UrduNovelRecommendationOntolgy:hasBirthdate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1857-01-16T18:00:00</UrduNovelRecommendationOntolgy:hasBirthdate>
+        <UrduNovelRecommendationOntolgy:hasName>MIrza Hadi Ruswa</UrduNovelRecommendationOntolgy:hasName>
+        <UrduNovelRecommendationOntolgy:hasNationality>Indian</UrduNovelRecommendationOntolgy:hasNationality>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#award_1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#award_1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#book_1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#book_1">
+        <UrduNovelRecommendationOntolgy:belongsToGenre rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#genre_1"/>
+        <UrduNovelRecommendationOntolgy:hasAuthor rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#author_1"/>
+        <UrduNovelRecommendationOntolgy:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1899-01-01T18:00:00</UrduNovelRecommendationOntolgy:hasDate>
+        <UrduNovelRecommendationOntolgy:hasISBN rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9693507320</UrduNovelRecommendationOntolgy:hasISBN>
+        <UrduNovelRecommendationOntolgy:hasTitle>Umrao Jan Ada</UrduNovelRecommendationOntolgy:hasTitle>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#genre_1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#genre_1">
+        <UrduNovelRecommendationOntolgy:hasDescription>A literature created from the imagination.</UrduNovelRecommendationOntolgy:hasDescription>
+        <UrduNovelRecommendationOntolgy:hasGenreName>Fiction</UrduNovelRecommendationOntolgy:hasGenreName>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#review_1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#review_1">
+        <UrduNovelRecommendationOntolgy:reviewsBook rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#book_1"/>
+        <UrduNovelRecommendationOntolgy:hasComment>A masterpiece of Urdu literature.</UrduNovelRecommendationOntolgy:hasComment>
+        <UrduNovelRecommendationOntolgy:hasDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-01-16T18:00:00</UrduNovelRecommendationOntolgy:hasDate>
+        <UrduNovelRecommendationOntolgy:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</UrduNovelRecommendationOntolgy:hasRating>
+    </NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#user_1 -->
+
+    <NamedIndividual rdf:about="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#user_1">
+        <UrduNovelRecommendationOntolgy:hasRead rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#book_1"/>
+        <UrduNovelRecommendationOntolgy:hasReviewed rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#review_1"/>
+        <UrduNovelRecommendationOntolgy:likesGenre rdf:resource="http://www.semanticweb.org/zeesh/ontologies/2024/4/UrduNovelRecommendationOntolgy#genre_1"/>
+        <UrduNovelRecommendationOntolgy:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22</UrduNovelRecommendationOntolgy:hasAge>
+        <UrduNovelRecommendationOntolgy:hasPreference>Fiction</UrduNovelRecommendationOntolgy:hasPreference>
+        <UrduNovelRecommendationOntolgy:hasUserName>rzi_zeeshan</UrduNovelRecommendationOntolgy:hasUserName>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
